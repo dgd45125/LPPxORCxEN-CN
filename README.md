@@ -9,3 +9,8 @@
 - `bayesian_ROI_analyses/joint_model_prepare_data.R` is an R script for combining the regressors and brain data so that it is ready for modeling.
 - `bayesian_ROI_analyses/models/roi-CN-EN_gpt2_bottomup_objRel_WH*.R` are the R scripts for fitting the by-ROI models.
 - `bayesian_ROI_analyses/models/joint_model_analysis.R` loads the fitted models and extracts and compares the coefficient estimates.
+
+<u>GLM analyses</u>
+- `GLM_analyses/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz` is a liberal, volumetric cortical mask based on Yeo et al. 2011. It is used to create a binary cortical mask which is used throughout the GLM analyses.
+- `univariate_analyses_first_level.ipynb` performs the first level analyses. 
+- `univariate_analyses_second_level.ipynb` performs the second level analyses.
