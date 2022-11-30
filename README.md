@@ -3,6 +3,7 @@
 - `prepare_regressors/cn/compute_chinese_regressors_github.ipynb` uses the prosody (`prepare_regressors/cn/annotaion_CN_lppCN_prosody.csv`), word-by-word Chinese GPT2 surprisal value (`prepare_regressors/cn/lpp_CN_word_surprisal_gpt.csv`), and word-by-word syntactic complexity and long-distance dependency annotation (`prepare_regressors/cn/COMPLEXITIES__ch_9apr2022.csv`) source materials to prepare the Chinese regressors.
 - `prepare_regressors/en/compute_english_regressors_github.ipynb` uses the F0 (`prepare_regressors/en/*_f0.csv`), word-by-word log lexical frequency (`prepare_regressors/en/*_freq.csv`), root mean squared amplitude of the spoken narration (`prepare_regressors/en/*_RMS.csv`), word-by-word GPT2 surprisal value (`prepare_regressors/en/Prince_gpt2.tsv`), word-by-word syntactic complexity metric (`prepare_regressors/en/disc_proj_en_10jan2022.csv`), and word-by-word long-distance dependency annotation (`prepare_regressors/en/COMPLEXITIES__en_9apr2022.csv`) source materials to prepare the English regressors.
   - `prepare_regressors/en/Prince_gpt2.tsv` comes from feeding `prepare_regressors/en/Prince.txt` into <a href="https://cpllab.github.io/lm-zoo/">lm-zoo</a> and getting the surprisals for GPT2.
+  - `prepare_regressors/en/*_f0.csv`, `prepare_regressors/en/*_freq.csv`, and `prepare_regressors/en/*_RMS.csv` come from the <a href="https://openneuro.org/datasets/ds003643/versions/2.0.1">Le Petit Prince OpenNEURO repository</a>.
 
 
 <u>Bayesian ROI analysis</u>
