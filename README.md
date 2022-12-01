@@ -7,7 +7,7 @@
 
 - `prepare_regressors/en/compute_english_regressors_github.ipynb` uses the F0 (`prepare_regressors/en/*_f0.csv`), word-by-word log lexical frequency (`prepare_regressors/en/*_freq.csv`), root mean squared amplitude of the spoken narration (`prepare_regressors/en/*_RMS.csv`), word-by-word GPT2 surprisal value (`prepare_regressors/en/Prince_gpt2.tsv`), word-by-word syntactic complexity metric (`prepare_regressors/en/disc_proj_en_10jan2022.csv`), and word-by-word long-distance dependency annotation (`prepare_regressors/en/COMPLEXITIES__en_9apr2022.csv`) source materials to prepare the English regressors.
   - `prepare_regressors/en/*_f0.csv`, `prepare_regressors/en/*_freq.csv`, and `prepare_regressors/en/*_RMS.csv` are chopped up spreadsheets from the annotations provided in the <a href="https://openneuro.org/datasets/ds003643/versions/2.0.1">Le Petit Prince OpenNEURO repository</a>.
-  - `prepare_regressors/en/Prince_gpt2.tsv` comes from feeding `prepare_regressors/en/Prince.txt` into <a href="https://cpllab.github.io/lm-zoo/">lm-zoo</a> to get the GPT2 surprisal values.
+  - `prepare_regressors/en/Prince_gpt2.tsv` comes from feeding `prepare_regressors/en/Prince.txt` into <a href="https://cpllab.github.io/lm-zoo/">lm-zoo</a> and getting the GPT2 surprisal values.
   - The word-by-word syntactic complexity metric from `prepare_regressors/en/disc_proj_en_10jan2022.csv` and the long-distance dependency annotations from `prepare_regressors/en/COMPLEXITIES__en_9apr2022.csv` were created via Deepmind-internal code which cannot be released. The process, however, is described in the paper.
 
 
